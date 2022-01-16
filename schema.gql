@@ -1,0 +1,40 @@
+type Engineer {
+  id: ID!
+  name: String!
+  title: String!
+  alias: String!
+  team: String!
+  vertical: [Vertical]!
+}
+
+type Vertical {
+  name: String!
+  engineers: [Engineer]!
+}
+
+type Query {
+  engineers: [Engineer]!
+  engineer(input: EngineerInput): [Engineer]!
+  verticals: [String]!
+  vertical(name: String): [Engineer]!
+}
+
+input EngineerInput {
+  id: ID
+  name: String
+  title: String
+  alias: String
+  team: String
+}
+
+input NewEngineerInput {
+  id: ID!
+  name: String!
+  title: String!
+  alias: String!
+  team: String!
+}
+
+type Mutation {
+  newEngineer(input: NewEngineerInput!): [Engineer]!
+}

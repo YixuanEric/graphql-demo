@@ -1,0 +1,40 @@
+[
+    {
+        "name": "API Management",
+        "engineers": [
+            {
+                "id": "0001",
+                "name": "Eric Wang",
+                "alias": "yixwan",
+                "title": "Support Engineer",
+                "team": "Developer"
+            },
+            {
+                "id": "0003",
+                "name": "Jerome Liu",
+                "alias": "jeromeliu",
+                "title": "Support Engineer",
+                "team": "Developer"
+            }
+        ]
+    },
+    {
+        "name": "Storage",
+        "engineers": [
+            {
+                "id": "0002",
+                "name": "Yuannan Wang",
+                "alias": "yuaw",
+                "title": "Support Escalation Engineer",
+                "team": "Developer"
+            },
+            {
+                "id": "0003",
+                "name": "Jerome Liu",
+                "alias": "jeromeliu",
+                "title": "Support Engineer",
+                "team": "Developer"
+            }
+        ]
+    }
+]
