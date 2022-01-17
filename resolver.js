@@ -9,7 +9,6 @@ const Resolver = {
     // filter engineers based on input
     engineer: ({ input }) => {
         // if client is passing arguments, filter the result
-        console.log(input);
         if (input) {
             return util.findEngineer(input);
         }
