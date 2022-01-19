@@ -6,7 +6,7 @@ const { Resolver } = require('./resolver.js');
 const { graphql, buildSchema } = require('graphql');
 
 // define server port either to environment-variable port number or 8000;
-const serverPort = process.env.PORT || 8080;
+const serverPort = process.env.PORT || 8000;
 
 // read the Schema from schema.graphql file
 const schemaRawString = fs.readFileSync('schema.gql').toString();
