@@ -30,21 +30,3 @@ input NewEngineerInput {
 type Mutation {
   newEngineer(input: NewEngineerInput!): [Engineer]!
 }
-
-
-
-{
-  engineer(input: {alias: "yixwan"}) {
-    name
-    id
-    case {
-      id
-      contract
-    }
-  }
-}
-
-
-http://restexample.com/api/getEngineerbyAlias/yixwan
-
-http://restexample.com/api/getCaseById/eead52-asdwq2d-dsasd2-dsaf92/

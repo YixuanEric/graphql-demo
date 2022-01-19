@@ -1,0 +1,8 @@
+{
+    "appService.zipIgnorePattern": [
+        "node_modules{,/**}",
+        ".vscode{,/**}"
+    ],
+    "appService.defaultWebAppToDeploy": "/subscriptions/914b2de1-02aa-467b-b2c5-3d59f349f319/resourceGroups/yixwangraphqldemo/providers/Microsoft.Web/sites/yxiwangraphqldemo",
+    "appService.deploySubpath": "."
+}
