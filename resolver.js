@@ -4,7 +4,7 @@ const util = require('./util.js');
 const Resolver = {
     // return all engineers
     engineers: () => {
-        return dbData;
+        return util.findAllEngineer();
     },
     // filter engineers based on input
     engineer: ({ input }) => {
@@ -15,15 +15,10 @@ const Resolver = {
         // if no arguments are passed, return all data
         return util.findAllEngineer();
     },
-    // Engineer: {
-    //     vertical: () => {
-    //         return ["a fake vertical"]
-    //     }
-    // },
 
     // add an engineer
     newEngineer: ({ input }) => {
-        dbData.push(input);
+        util.newEngineer(input);
         return util.findAllEngineer();
     }
 };

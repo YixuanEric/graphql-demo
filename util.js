@@ -26,23 +26,26 @@ function findAllEngineer() {
 function findEngineer(input) {
     const result = [];
     const properties = Object.keys(input);
-    console.log(properties);
     for (let engineer of dbData) {
         let match = true;
         for (let property of properties) {
-            console.log(`comparing ${property} field, current object is ${engineer}`,);
             if (engineer[property] != input[property]) {
                 match = false;
             }
         }
         match && result.push(engineer);
     }
-    console.log(result);
     return result;
+}
+
+function newEngineer(input) {
+    dbData.push(input);
+    return dbData;
 }
 
 module.exports = {
     parseRequestBody,
     findEngineer,
-    findAllEngineer
+    findAllEngineer,
+    newEngineer
 };

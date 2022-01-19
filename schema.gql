@@ -4,19 +4,11 @@ type Engineer {
   title: String!
   alias: String!
   team: String!
-  vertical: [Vertical]!
-}
-
-type Vertical {
-  name: String!
-  engineers: [Engineer]!
 }
 
 type Query {
   engineers: [Engineer]!
   engineer(input: EngineerInput): [Engineer]!
-  verticals: [String]!
-  vertical(name: String): [Engineer]!
 }
 
 input EngineerInput {
@@ -38,3 +30,21 @@ input NewEngineerInput {
 type Mutation {
   newEngineer(input: NewEngineerInput!): [Engineer]!
 }
+
+
+
+{
+  engineer(input: {alias: "yixwan"}) {
+    name
+    id
+    case {
+      id
+      contract
+    }
+  }
+}
+
+
+http://restexample.com/api/getEngineerbyAlias/yixwan
+
+http://restexample.com/api/getCaseById/eead52-asdwq2d-dsasd2-dsaf92/
